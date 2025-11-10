@@ -9,9 +9,9 @@ module.exports = {
       colors: {
         brand: {
           purple: "#6b46c1",
-          light: "#f3e8ff",        // bg-brand-light
-          "lightCard": "#faf5ff", // bg-brand-light-card
-          "lightHover": "#ede9fe" // hover:bg-brand-light-hover
+          light: "#f3e8ff",
+          "lightCard": "#faf5ff", 
+          "lightHover": "#ede9fe" 
         },
       },
     },
