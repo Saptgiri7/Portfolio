@@ -38,7 +38,7 @@ const projects = [
     ],
     tech: ["React.js", "Tailwind CSS", "Framer Motion", "JavaScript"],
     github: "https://github.com/Saptgiri7",
-    demo: "#",
+    demo: "https://portfolio-ri7v.onrender.com/",
     image:
       `${process.env.PUBLIC_URL}/portfolio.png`
   }
