@@ -22,7 +22,7 @@ const projects = [
       "JWT Auth",
       "Tailwind CSS"
     ],
-    github: "https://github.com/Saptgiri7",
+    github: "https://github.com/Saptgiri7/webService/tree/main/backend",
     demo: "https://frontend-unjz.onrender.com/",
     image:
       `${process.env.PUBLIC_URL}/e-commerce.png` 
@@ -37,7 +37,7 @@ const projects = [
       "Responsive and fast-loading UI",
     ],
     tech: ["React.js", "Tailwind CSS", "Framer Motion", "JavaScript"],
-    github: "https://github.com/Saptgiri7",
+    github: "https://github.com/Saptgiri7/Portfolio/",
     demo: "https://portfolio-ri7v.onrender.com/",
     image:
       `${process.env.PUBLIC_URL}/portfolio.png`
