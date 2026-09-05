@@ -1,114 +1,97 @@
-# 🍽️ WebService — Full-Stack Web App for Pengonda Kalyani Foods
+# 👨‍💻 saptgiri — Developer Portfolio
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router_v7-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-> A production-ready full-stack web application built for **Pengonda Kalyani Foods** — a real-world client project featuring a React + Vite frontend and a Node.js/Express REST API backend following the MVC pattern.
+> saptgiri's personal developer portfolio — a single-page application that introduces who I am, highlights the projects I've built, and makes it easy for recruiters and engineers to reach me. Built with React 19 and Framer Motion for smooth, professional animations.
 
----
-
-## 🚀 Features
-
-- **MVC Architecture** — Clean separation of Models, Controllers, Routes, and Middleware on the backend
-- **React + Vite Frontend** — Lightning-fast HMR development with optimized production builds
-- **RESTful API** — Structured Express API with dedicated route files per resource
-- **Custom Middleware** — Request validation, error handling, and authentication middleware
-- **Monorepo Structure** — Frontend and backend co-located in one repository for easy deployment
+🔗 **Live:** [saptgiri7.github.io/Portfolio](https://saptgiri7.github.io/Portfolio)
 
 ---
 
-## 🏗️ Architecture
+## 🧑‍🎨 What's Inside
 
-```
-webService/
-├── backend/
-│   ├── server.js         # Express app entry point
-│   ├── config/           # DB connection & environment config
-│   ├── controllers/      # Business logic handlers
-│   ├── middleware/       # Auth, error handling, validation middleware
-│   ├── model/            # Database models (schema definitions)
-│   ├── routes/           # API route definitions
-│   └── package.json
-└── frontend/
-    ├── src/              # React components & pages
-    ├── public/           # Static assets
-    ├── vite.config.js    # Vite configuration with proxy setup
-    └── package.json
-```
+The portfolio is divided into four key sections, each crafted to communicate a specific part of my story:
 
-**Key Design Decisions:**
-- **Vite proxy** configured to forward `/api` requests to Express during development — zero CORS issues
-- **MVC pattern** chosen on the backend to keep business logic out of route handlers
-- Separate `package.json` for frontend and backend enables independent deployment
+| Section | What It Communicates |
+|---------|----------------------|
+| **Hero** | Who I am — name, role, and animated tagline |
+| **About** | My background, tech skills, and what drives me |
+| **Projects** | Live demos + GitHub links for my key projects |
+| **Contact** | Email, LinkedIn, and GitHub — easy to reach |
+
+---
+
+## ✨ UI & Animation Highlights
+
+- **`whileInView` scroll animations** — Each section animates in as the user scrolls, built with Framer Motion — no scroll event listeners needed
+- **Staggered list reveals** — Skill tags and project cards appear with a cascading delay using `staggerChildren`
+- **Page transitions** — Smooth fade + slide between routes using `AnimatePresence`
+- **Hover micro-interactions** — Buttons and cards respond with subtle scale/glow effects
+- **Dark theme** — Deep, professional dark palette with accent highlights — optimized for readability
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend Framework | React 18 |
-| Build Tool | Vite |
-| Backend Runtime | Node.js |
-| Web Framework | Express.js |
-| Database | MongoDB |
-| Linting | ESLint |
+| Technology | Version | Why |
+|-----------|---------|-----|
+| React | 19 | Latest concurrent rendering features |
+| Framer Motion | 12 | Production-grade animation library |
+| Tailwind CSS | 3 | Utility-first, zero dead CSS in prod |
+| React Router | v7 | File-based client-side routing |
+| React Icons | 5 | 40+ icon libraries in one package |
 
 ---
 
-## ⚙️ Setup & Installation
+## 📁 Project Structure
 
-### Prerequisites
-- Node.js v18+
-- MongoDB (local or Atlas)
-
-### Backend
-
-```bash
-cd backend
-npm install
-
-# Create .env file
-echo "MONGO_URI=your_mongodb_connection_string" > .env
-echo "PORT=5000" >> .env
-
-npm start          # Production
-npm run dev        # Development with auto-reload
 ```
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev        # Starts on http://localhost:5173
-npm run build      # Production build
+Portfolio/
+├── public/
+│   └── favicon.ico
+├── src/
+│   ├── pages/
+│   │   ├── Home.js        # Hero + animated landing
+│   │   ├── About.js       # Skills, bio, experience
+│   │   ├── Projects.js    # Project cards with live links
+│   │   └── Contact.js     # Contact form & social links
+│   ├── components/
+│   │   ├── Navbar.js      # Responsive sticky nav
+│   │   └── ProjectCard.js # Reusable project showcase card
+│   ├── assets/            # Images & icons
+│   └── App.js             # Router setup + AnimatePresence wrapper
+├── tailwind.config.js     # Extended theme (colors, fonts)
+└── postcss.config.js
 ```
 
 ---
 
-## 📡 API Endpoints
+## ⚙️ Run Locally
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/products` | Get all food products |
-| POST | `/api/products` | Add a new product |
-| PUT | `/api/products/:id` | Update product details |
-| DELETE | `/api/products/:id` | Remove a product |
-| POST | `/api/auth/login` | User authentication |
+```bash
+git clone https://github.com/Saptgiri7/Portfolio.git
+cd Portfolio
+npm install
+npm start              # http://localhost:3000
+```
 
----
-
-## 🌱 Future Enhancements
-
-- [ ] JWT authentication with refresh tokens
-- [ ] Order management system
-- [ ] Admin dashboard with analytics
-- [ ] Image upload via Cloudinary
-- [ ] Docker + CI/CD pipeline
+```bash
+npm run build          # Optimized production build
+```
 
 ---
 
+## 📬 Contact Me
+
+| Platform | Link |
+|----------|------|
+| GitHub | [github.com/saptgiri7](https://github.com/Saptgiri7) |
+| Email | Available on the portfolio contact page |
+| LinkedIn | Available on the portfolio contact page |
+
+---
+
+> ⭐ If you find this useful as a portfolio template, feel free to fork it!
